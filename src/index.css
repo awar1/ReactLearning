@@ -1,13 +1,101 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0;  font-family: 'Poppins',sans-serif;
+
+}
+.mainPage{
+
+  height: 100vh;
+  background: white;
+}
+.nav-bar{
+  height: 7vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  box-shadow:  0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.nav-logo{
+  width: 100px;
+  margin-left: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* content */
+.content{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper{
+  margin-top: 50px;
+  width: 100%;
+}
+@media only screen and (min-width:50px){
+  .content-img{
+    width: 30vh;
+    display: block;
+    margin: auto;
+  }
+}
+@media only screen and (min-width:750px){
+.content-img{
+  width:60vh;
+  display: block;
+  margin: auto;
+}
+}
+
+.description{
+  width: 400px;
+}
+
+/* card */
+
+.card{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.info{
+  margin-bottom: 5px;
+  height: 250px;
+}
+.info-text{
+  width: 68px;
+  margin-left:10px;
+  font-size:15px;
+  padding-left: 7px;
+  position: relative;
+  background-color: gainsboro;
+  border-radius: 2px 2px;
+  bottom:260px;
+  color: #222222;
+}
+.card-photo{
+  width: 200px;
+  height: 250px;
+  border-radius: 10px 10px;
+  margin-bottom: 0px;
+}
+.card-rating, .card-text{
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 10px;
+  line-height: 3px;
+}
+.card-rating>p{
+  margin-left: 5px;
+}
+span{
+  color:gray;
+}
+.star{
+  width: 12px;
+  height: 12px;
 }
